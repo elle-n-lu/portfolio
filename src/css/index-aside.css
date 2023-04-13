@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../../docs/mo-fJf1ByoODJk-unsplash.jpg") no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-base {
+  padding: 4rem 1rem 100px 1rem;
+}
+@media screen and (min-width: 800px) {
+  .main-base {
+    padding: 4rem 5rem 250px 5rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .main-base {
+    padding: 4rem 12rem 250px 12rem;
+  }
+}
+
+.article-base {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.this-page {
+  padding: 1rem 0;
+  width: 100%;
+  font-size: 1.3rem;
+}
+.this-page a {
+  margin: 0 0.5rem;
+}
+.this-page a:hover {
+  color: #ff6d19;
+  border-bottom: 1px solid #ff6d19;
+}
+
+.icon, aside .aside-icons .icon {
+  display: inline-block;
+  background: black;
+  width: 30px;
+  height: 30px;
+}
+.icon:hover, aside .aside-icons .icon:hover {
+  background: #ff6d19;
+}
+
+aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+aside .aside-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+aside .aside-icons .git-icon {
+  -webkit-mask: url("../../docs/svg/icons8-github.svg");
+          mask: url("../../docs/svg/icons8-github.svg");
+  -webkit-mask-size: cover;
+          mask-size: cover;
+}
+aside .aside-icons .linkedin-icon {
+  -webkit-mask: url("../../docs/svg/icons8-linkedin.svg");
+          mask: url("../../docs/svg/icons8-linkedin.svg");
+  -webkit-mask-size: cover;
+          mask-size: cover;
+}
+aside a {
+  display: block;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+aside a:hover {
+  border-bottom: 1px solid;
+  color: #ff6d19;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    grid-template-columns: 1fr 3fr;
+  }
+  main aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    background-color: white;
+    height: 60vh;
+    border-radius: 10px;
+  }
+}/*# sourceMappingURL=index-aside.css.map */

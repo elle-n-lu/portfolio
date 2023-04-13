@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../docs/paw-icon.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/post1.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="nav-avatar"></a>
+            <div class="name">
+                <h1>WEN &nbsp;&nbsp; Lu</h1>
+
+                <img alt="caticon" class="cat-logo" src="../../docs/paw-icon.png">
+                <label>Coder</label><label>Front end developer</label><label>Cat Love</label>
+                <label>Coder</label>
+            </div>
+        </nav>
+    </header>
+    <!-- ------------------Main-------------------- -->
+    <main>
+        <p class="thispage"><a href="./index.html">Home</a>/<a href="./category.html">Category </a>/
+            <a href="./category.html">Git </a>/ About learning of basic Git Commands
+        </p>
+        <div class="main">
+            <aside>
+                <h2><a>Category</a></h2>
+                <div class="titles-list">
+                    <div class="cate-posts">
+                        <label>GIT</label>
+                        <a href="./post1.html">Learn basic Git</a>
+                        <a href="./post2.html">Learn basic Github Actions</a>
+                    </div>
+                    <div class="cate-posts">
+                        <label>HTML</label>
+
+                        <a href="./post3.html">fun HTML/5</a>
+                    </div>
+                    <div class="cate-posts">
+                        <label>CSS</label>
+
+                        <a href="./post4.html">Learn fun CSS</a>
+                    </div>
+                    <div class="cate-posts">
+                        <label>SASS</label><a href="./post5.html">Learn SASS</a>
+                    </div>
+
+                </div>
+            </aside>
+            <section>
+                <article>
+                    <h2>About learning of basic Git Commands</h2>
+                    <label>2023.04.08</label>
+                    <ol>
+                        <p>
+                            <img src="../../docs/social-git.jpeg" width="100%">
+                        </p>
+                        <h4>Before creating a repo, create a SSH key or other authentication way, to avoid the
+                            authentication error when you push your project changes.</h4>
+                        <li>Start with repo from github website</li>
+                        <p>In your repositories settings, create new repo, select add a README.md file and add a MIT
+                            license(the most used one).</p>
+                        <p>In the new repo, click the green <button>Code</button> button and clone the HTTPS link.</p>
+                        <p>Open Visual Studio Code, in the terminal area, execute </p>
+                        <p class="comd">git clone your-repo-link</p>
+                        <li>Already have a local project? </li>
+                        <p>You still need a repo created!</p>
+                        <p>In the terminal, navigate to your local prject folder, execute </p>
+                        <div class="comd">
+                            <p>$ git init</p>
+                            <p>$ git add .</p>
+                            <p>$ git commit -m "first commit"</p>
+                            <p>$ git branch -M main</p>
+                            <p>$ git remote add origin 'your repo link'</p>
+                            <p>$ git pull 'your repo link' main</p>
+                            <p>$ git pull origin main --rebase </p>
+                            <p>$ git push -u origin main</p>
+                        </div>
+                        <li>Other commans</li>
+                        <p class="comd">git status</p>
+                        <p>Check the current branch:</p>
+                        <p class="comd">git branch</p>
+                        <p> New Branch:</p>
+                        <p class="comd">git checkout -b &lt;new-branch&gt; </p>
+                        <p> Switch Branch:</p>
+                        <p class="comd">git checkout &lt;branch&gt;</p>
+                    </ol>
+                </article>
+            </section>
+        </div>
+    </main>
+    <!-- ------------------Footer-------------------- -->
+    <footer>
+        <p> &copy;2023. WEN LUU</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+@import 'header';
+@import 'footer';
+@import 'base';
+
+main {
+    @extend .main-base;
+    height: 80vh;
+
+    .thispage {
+        @extend .this-page;
+    }
+
+    .main {
+        section {
+            @extend .article-base;
+            text-align: left;
+            a{
+                margin:0 2rem ;
+                &:hover{
+                    color: $mandarin;
+                    border-bottom: 1px solid $mandarin;
+                }
+            }
+        }
+    }
+}

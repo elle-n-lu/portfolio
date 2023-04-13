@@ -1,0 +1,239 @@
+@import 'header';
+@import 'footer';
+@import 'base';
+@import 'index-aside';
+
+.img-shadow {
+    box-shadow: 0 0px 10px black;
+
+    height: 30vw;
+    margin: 1rem auto;
+}
+
+.word-hover {
+    transition: .5s;
+
+    &:hover {
+        color: $mandarin;
+        transform: translateY(-4px)
+    }
+}
+
+main {
+    @extend .main-base;
+    @include grid(1fr);
+
+
+    section {
+        .aboutme {
+            background-color: $white;
+            padding: 1rem;
+            border-bottom: 2px solid $lightgray;
+
+            .top {
+                @include flex(_, space-between);
+                @extend .word-hover;
+                font-weight: bold;
+                color: $lightgray;
+                font-size: 2rem;
+
+                .img-icon {
+                    width: 1rem;
+                    fill: rebeccapurple;
+                }
+            }
+        }
+
+        article {
+            @extend .article-base;
+            color: $gray;
+
+            h2 {
+                margin-bottom: 1rem;
+            }
+
+            button {
+                border: none;
+                padding: .5em;
+                transition: 1s;
+
+                &:hover {
+                    background-color: $mandarin;
+                    color: $white;
+                    transform: scale(1.4);
+                    margin: 0 .5rem;
+                }
+            }
+
+            &.skills {
+                padding: 1rem 1rem 2rem;
+                border-radius: 0 0 8px 8px;
+            }
+
+            &.interests {
+                h2 {
+                    margin-bottom: 0;
+                }
+
+                .interests-box {
+                    text-align: center;
+
+                    p {
+                        padding: 10% 5% 10% 55%;
+                        color: $white;
+                        font-size: 1.3rem;
+
+                        strong {
+                            font-size: 1.7rem;
+                        }
+                    }
+
+                    .interests-img1 {
+                        @extend .img-shadow;
+                        background: url(../../docs/anne-allier-b75Vwu03Jmw-unsplash.jpg) no-repeat;
+                        background-size: cover;
+                    }
+
+                    .interests-img2 {
+                        @extend .img-shadow;
+                        background: url(../../docs/brandi-redd-6H9H-tYPUQQ-unsplash.jpg) no-repeat;
+                        background-size: cover;
+                    }
+
+                    .interests-img3 {
+                        @extend .img-shadow;
+                        background: url(../../docs/Screenshot\ 2023-04-12\ at\ 6.20.35\ pm.png) no-repeat;
+                        background-size: cover;
+                    }
+                }
+            }
+
+            &.professions {
+                padding: 0;
+
+                h2 {
+                    padding: 1rem 1rem 0;
+                }
+
+
+            }
+
+            &.education {
+                button {
+                    transition: none;
+                    margin-top: 1em;
+
+                    &:hover {
+                        transform: none;
+                        background-color: $gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.form {
+    padding: 1% 0;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 100px;
+    background-color: $white;
+
+    p {
+        padding: .5rem 0;
+        @extend .word-hover;
+    }
+
+    .icon {
+        @extend .icon;
+        background: $white;
+        &:hover {
+            background: $mandarin;
+        }
+    }
+
+    .mail-icon {
+        mask: url('../../docs/svg/icons8-mail.svg');
+        mask-size: cover;
+    }
+
+    .phone-icon {
+        mask: url('../../docs/svg/icons8-phone.svg');
+        mask-size: cover
+    }
+
+    .doc-icon {
+        mask: url('../../docs/svg/icons8-google-docs.svg');
+        mask-size: cover
+    }
+    button{
+        padding: .5rem 1rem ;
+        &:hover{
+            color: $mandarin;
+        }
+    }
+}
+
+@media screen and (min-width:800px) {
+    main {
+        margin-top: 1rem;
+        grid-template-columns: 1fr 3fr;
+
+        aside {
+            width: 20vw;
+
+            label:hover {
+                border-radius: 0 8px 8px 0;
+            }
+        }
+
+    }
+
+    .form {
+        position: fixed;
+        bottom: 10vh;
+        width: 100%;
+        padding-bottom: 0;
+        background-color: rgba($color: #000000, $alpha: .6);
+        color: $white;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    main {
+        section {
+            article {
+                &.interests {
+                    .interests-box {
+                        @include flex();
+
+                        .interests-img1 {
+                            width: 33%;
+
+                            &:hover {
+                                width: 100%;
+                            }
+                        }
+
+                        .interests-img2 {
+                            width: 20%;
+
+                            &:hover {
+                                width: 100%;
+                            }
+                        }
+
+                        .interests-img3 {
+                            width: 33%;
+
+                            &:hover {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

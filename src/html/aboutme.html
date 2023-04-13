@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../docs/paw-icon.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/aboutme.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="nav-avatar"></a>
+            <div class="name">
+                <h1>WEN &nbsp;&nbsp; Lu</h1>
+                <img alt="caticon" class="cat-logo" src="../../docs/paw-icon.png">
+                <label>Coder</label><label>Front end developer</label><label>Cat Love</label>
+                <label>Coder</label>
+            </div>
+        </nav>
+    </header>
+    <!-- ------------------Main-------------------- -->
+    <main>
+        <aside>
+            <label><a href="#aboutme">About me</a> </label>
+            <label><a href="#skills">Skills</a> </label>
+            <label><a href="#interests">Interests </a></label>
+            <label><a href="#work">Work Experience</a></label>
+            <label><a href="#education">Education</a></label>
+        </aside>
+
+        <section>
+            <div class="aboutme" id="aboutme">
+                <div class="top">
+                    ABOUT ME
+                </div>
+                <p>Studying in CA BootCamp; </p><br>
+                <p>Aspiring Front End / BackEnd developer;</p>
+            </div>
+            <article class="skills" id="skills">
+                <h2>Skills</h2>
+                <div>
+                    <button>HTML</button>
+                    <button>CSS</button>
+                    <button>JavaScript</button>
+                    <button>Python</button>
+                    <button>React.js</button>
+                    <button>PostgreSQL</button>
+                </div>
+            </article>
+            <article class="interests" id="interests">
+                <h2>Interests</h2>
+                <div class="interests-box">
+                    <div class="interests-img1">
+                        <p>find fresh vegetables and meat to <strong>Cook</strong> a easy meal</p>
+                    </div>
+                    <div class="interests-img2">
+                        <p><strong>Reading</strong> to know unknown</p>
+                    </div>
+                    <div class="interests-img3">
+                        <p><strong>VFX</strong>, I like it's Cool</p>
+                    </div>
+
+                </div>
+            </article>
+            <article class="Work" id="work">
+                <h2>Work Experience</h2>
+                <div>
+                    <p>2021.09 --2023.03 &nbsp;&nbsp;&nbsp; Night Fill&nbsp;&nbsp;&nbsp;&nbsp;Woolworths Katherine</p>
+                    <br>
+                    <p>2022.06 -- 2022.09 &nbsp;&nbsp;&nbsp;&nbsp; Sales Representative &nbsp;&nbsp;&nbsp;&nbsp;NT
+                        Technology</p><br>
+                    <p>2017.06 -- 2019.09 &nbsp;&nbsp;&nbsp;&nbsp; Digital matte painter &nbsp;&nbsp;&nbsp;&nbsp;Beijing
+                        CHINA</p>
+                </div>
+            </article>
+            <article class="education" id="education">
+                <h2>Education</h2>
+                <div>
+                    <p>2023.03 --Now &nbsp;&nbsp;&nbsp;&nbsp; Coder Academy Bootcamp</p><br>
+                    <p>2020.07 -- 2022.07 &nbsp;&nbsp;&nbsp;&nbsp;[Chareles Darwin University]</p>
+                    <button>Information Technology&nbsp;[Cyber Security]</button>
+                </div>
+            </article>
+
+        </section>
+    </main>
+    <div class="form">
+        <p> <span class="icon mail-icon"></span>Email:<a href="mailto:14458@coderacademy.edu.au " > 14458@coderacademy.edu.au</a> </p>
+        <p><span class="icon phone-icon"></span> Phone: 0458591406</p>
+        <p><span class="icon doc-icon"></span>Resume:
+            <button type="button" id="pdf">Download</button>
+        </p>
+
+    </div>
+    <!-- ------------------Footer-------------------- -->
+    <footer>
+        <p> &copy;2023. WEN LU</p>
+    </footer>
+</body>
+<script type="text/javascript">
+       var sac = document.getElementById('pdf')
+       sac.onclick=function(){
+        window.open('https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Ellen+Lu-Front+End+Developer.pdf')
+       }
+
+</script>
+</html>

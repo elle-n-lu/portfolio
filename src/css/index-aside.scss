@@ -1,0 +1,47 @@
+@import 'base';
+aside {
+    @include flex($justifyContent: center);
+    flex-wrap: wrap;
+    background-color: rgba($color: $white, $alpha: .4);
+    
+    .aside-icons {
+        @include flex();
+        .icon{
+            @extend .icon;
+        }
+        .git-icon {
+            mask: url('../../docs/svg/icons8-github.svg');
+            mask-size: cover;
+        }
+        .linkedin-icon {
+            mask: url('../../docs/svg/icons8-linkedin.svg');
+            mask-size: cover;
+        }
+    }
+
+    a {
+        display: block;
+        margin: 0.5rem;
+        padding: 0.5rem 1rem;
+        &:hover {
+         
+                border-bottom: 1px solid;
+                color: $mandarin;
+                font-weight: bold;
+       
+        }
+    }
+}
+
+@media screen and (min-width:800px) {
+  
+    main {
+        grid-template-columns: 1fr 3fr;
+        aside {
+            @include flex(column, left, flex-start);
+            background-color: $white;
+            height: 60vh;
+            border-radius: 10px;
+        }
+    }
+}

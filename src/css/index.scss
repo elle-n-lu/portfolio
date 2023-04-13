@@ -1,0 +1,60 @@
+@import 'base';
+@import 'header';
+@import 'footer';
+@import 'index-aside';
+
+.word-hover{
+    transition: .4s;
+    &:hover{
+        color: $mandarin;
+        transform: translateY(-4px)
+    }
+}
+
+main {
+    @extend .main-base;
+    
+    @include grid(1);
+    margin-top: 1rem;
+
+    section {
+        article {
+            @extend .article-base;
+
+            .post-title {
+                @include flex($justifyContent: space-between);
+                @extend .word-hover;
+                margin-bottom: .5rem
+            }
+
+            label {
+                display: inline-block;
+                margin-bottom: .5rem;
+                border: 1px solid $brown;
+                padding: 0 0.5rem;
+                border-radius: 4px;
+                font-size: small
+            }
+        }
+    }
+
+    .pagination {
+        @include flex();
+        margin: 2rem 0;
+
+        a {
+            display: block;
+            text-align: center;
+            width: 4vw;
+            margin: 0 0.3rem;
+            background-color: white;
+            border-radius: 5px;
+
+        }
+    }
+
+}
+
+
+
+

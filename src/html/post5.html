@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../docs/paw-icon.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/post1.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html" class="nav-avatar"></a>
+            <div class="name">
+                <h1>WEN &nbsp;&nbsp; Lu</h1>
+
+                <img alt="caticon" class="cat-logo" src="../../docs/paw-icon.png">
+                <label>Coder</label><label>Front end developer</label><label>Cat Love</label>
+                <label>Coder</label>
+            </div>
+        </nav>
+    </header>
+    <!-- ------------------Main-------------------- -->
+    <main>
+        <p class="thispage"><a href="./index.html">Home</a>/<a href="./category.html">Category </a>/
+            <a href="./category.html">SASS </a>/ About learning of basic Sass
+        </p>
+        <div class="main">
+            <aside>
+                <h2><a>Category</a></h2>
+                <div class="titles-list">
+                    <div class="cate-posts">
+                        <label>GIT</label>
+                        <a href="./post1.html">Learn basic Git</a>
+                        <a href="./post2.html">Learn basic Github Actions</a>
+                    </div>
+                    <div class="cate-posts">
+                        <label>HTML</label>
+
+                        <a href="./post3.html">fun HTML/5</a>
+                    </div>
+                    <div class="cate-posts">
+                        <label>CSS</label>
+
+                        <a href="./post4.html">Learn fun CSS</a>
+                    </div>
+                    <div class="cate-posts">
+                        <label>SASS</label><a href="./post5.html">Learn SASS</a>
+                    </div>
+
+                </div>
+            </aside>
+            <section>
+                <article>
+                    <h2>About learning usage of Sass</h2>
+                    <label>2023.04.08</label>
+                    <ol>
+                        <p>Sass is preprocessor, according to official website. </p>
+                        <p>It makes css able be programmed, like normal coding language, have variables, have functions,
+                            can reuse and "DRY" the code.</p>
+                        <p>
+                            <img src="../../docs/scss-img.jpg" width="100%">
+                        </p>
+                        <li>Global Variables: easy to change commonly used color.</li>
+                        <p>$primary-color: blue;
+                        </p>
+                        <p>$second-color: red;</p>
+                        <li>Mixin<button>Some reused partials</button></li>
+                        <p class="comd">@mixin flex($direction: row, $align: center, $justify: center){
+                            display: flex;
+                            …}</p>
+                        <p>.contaner{</p>
+                        <p>@include flex(column)</p>
+                        <p>}</p>
+                        <li>Extend existed button setting:</li>
+                        <p class="comd">
+                            .btn1 {
+                            color: $ft-col;
+                            background-color: $pnt-color;
+                            width: 200px;
+                            height: 48px
+                            }
+                        </p>
+                        <p>.but02{</p>
+                        <p>@extend .btn1</p>
+                        <p>}</p>
+                        <li>Nesting fuction:</li>
+                        <p>The normal used one:</p>
+                        <div class="comd">
+                            <p>.btn1 {</p>
+                            <p> .ng: {</p>
+                            <p> background-color: $pnt-color;</p>
+                            <p> width: 200px;}</p>
+                            <p> &:hover{width: 48px}</p>
+                            <p> }</p>
+                        </div><br>
+                        <p>Instead of:</p>
+                        <div class="comd">
+                            <p>.btn1 > .ng: {</p>
+                            <p> background-color: $pnt-color;</p>
+                            <p> width: 200px;}</p>
+                            <p>.btn1 > .ng: hover{</p>
+                            <p> width: 48px}</p>
+                            <p> }</p>
+                        </div>
+                    </ol>
+                </article>
+            </section>
+        </div>
+    </main>
+    <!-- ------------------Footer-------------------- -->
+    <footer>
+        <p> &copy;2023. WEN LU</p>
+    </footer>
+</body>
+
+</html>
