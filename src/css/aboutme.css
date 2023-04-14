@@ -29,7 +29,7 @@ body a {
   }
 }
 
-.article-base, main section article {
+.article-base, main .container article {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -161,7 +161,7 @@ body a {
   }
 }
 
-.article-base, main section article {
+.article-base, main .container article {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -234,7 +234,7 @@ body a {
   }
 }
 
-.article-base, main section article {
+.article-base, main .container article {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -294,7 +294,7 @@ body a {
   }
 }
 
-.article-base, main section article {
+.article-base, main .container article {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -375,16 +375,16 @@ aside a:hover {
     border-radius: 10px;
   }
 }
-.img-shadow, main section article.interests .interests-box .interests-img3, main section article.interests .interests-box .interests-img2, main section article.interests .interests-box .interests-img1 {
+.img-shadow, main .container article.interests .interests-box .interests-img3, main .container article.interests .interests-box .interests-img2, main .container article.interests .interests-box .interests-img1 {
   box-shadow: 0 0px 10px black;
   height: 30vw;
   margin: 1rem auto;
 }
 
-.word-hover, .form p, main section .aboutme .top {
+.word-hover, .form p, main .container .aboutme .top {
   transition: 0.5s;
 }
-.word-hover:hover, .form p:hover, main section .aboutme .top:hover {
+.word-hover:hover, .form p:hover, main .container .aboutme .top:hover {
   color: #ff6d19;
   transform: translateY(-4px);
 }
@@ -394,12 +394,12 @@ main {
   grid-template-columns: 1fr;
   gap: 16px;
 }
-main section .aboutme {
+main .container .aboutme {
   background-color: white;
   padding: 1rem;
   border-bottom: 2px solid #c8c7ca;
 }
-main section .aboutme .top {
+main .container .aboutme .top {
   display: flex;
   flex-direction: _;
   justify-content: space-between;
@@ -408,68 +408,68 @@ main section .aboutme .top {
   color: #c8c7ca;
   font-size: 2rem;
 }
-main section .aboutme .top .img-icon {
+main .container .aboutme .top .img-icon {
   width: 1rem;
   fill: rebeccapurple;
 }
-main section article {
+main .container article {
   color: gray;
 }
-main section article h2 {
+main .container article h2 {
   margin-bottom: 1rem;
 }
-main section article button {
+main .container article button {
   border: none;
   padding: 0.5em;
   transition: 1s;
 }
-main section article button:hover {
+main .container article button:hover {
   background-color: #ff6d19;
   color: white;
   transform: scale(1.4);
   margin: 0 0.5rem;
 }
-main section article.skills {
+main .container article.skills {
   padding: 1rem 1rem 2rem;
   border-radius: 0 0 8px 8px;
 }
-main section article.interests h2 {
+main .container article.interests h2 {
   margin-bottom: 0;
 }
-main section article.interests .interests-box {
+main .container article.interests .interests-box {
   text-align: center;
 }
-main section article.interests .interests-box p {
+main .container article.interests .interests-box p {
   padding: 10% 5% 10% 55%;
   color: white;
   font-size: 1.3rem;
 }
-main section article.interests .interests-box p strong {
+main .container article.interests .interests-box p strong {
   font-size: 1.7rem;
 }
-main section article.interests .interests-box .interests-img1 {
+main .container article.interests .interests-box .interests-img1 {
   background: url(../../docs/anne-allier-b75Vwu03Jmw-unsplash.jpg) no-repeat;
   background-size: cover;
 }
-main section article.interests .interests-box .interests-img2 {
+main .container article.interests .interests-box .interests-img2 {
   background: url(../../docs/brandi-redd-6H9H-tYPUQQ-unsplash.jpg) no-repeat;
   background-size: cover;
 }
-main section article.interests .interests-box .interests-img3 {
+main .container article.interests .interests-box .interests-img3 {
   background: url(../../docs/Screenshot\ 2023-04-12\ at\ 6.20.35\ pm.png) no-repeat;
   background-size: cover;
 }
-main section article.professions {
+main .container article.professions {
   padding: 0;
 }
-main section article.professions h2 {
+main .container article.professions h2 {
   padding: 1rem 1rem 0;
 }
-main section article.education button {
+main .container article.education button {
   transition: none;
   margin-top: 1em;
 }
-main section article.education button:hover {
+main .container article.education button:hover {
   transform: none;
   background-color: gray;
 }

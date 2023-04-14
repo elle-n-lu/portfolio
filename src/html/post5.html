@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../docs/paw-icon.png">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/post1.css" />
+    <link rel="stylesheet" href="../css/post1.css" >
 </head>
 
 <body>
+    <!-- header  -->
     <header>
         <nav>
             <a href="../../index.html" class="nav-avatar"></a>
@@ -23,7 +24,7 @@
             </div>
         </nav>
     </header>
-    <!-- ------------------Main-------------------- -->
+    <!-- main  -->
     <main>
         <p class="thispage"><a href="../../index.html">Home</a>/<a href="./category.html">Category </a>/
             <a href="./category.html">SASS </a>/ About learning of basic Sass
@@ -53,29 +54,29 @@
 
                 </div>
             </aside>
-            <section>
+            <div class="container">
                 <article>
                     <h2>About learning usage of Sass</h2>
                     <label>2023.04.08</label>
-                    <ol>
-                        <p>Sass is preprocessor, according to official website. </p>
-                        <p>It makes css able be programmed, like normal coding language, have variables, have functions,
-                            can reuse and "DRY" the code.</p>
+                    <h4 style="text-align: left;">Sass is preprocessor, according to official website. </h4>
+                    <p style="text-align: left;">It makes css able be programmed, like normal coding language, have variables, have functions,
+                        can reuse and "DRY" the code.</p>
                         <p>
-                            <img src="../../docs/scss-img.jpg" width="100%">
+                            <img src="../../docs/scss-img.jpg" alt="scss">
                         </p>
-                        <li>Global Variables: easy to change commonly used color.</li>
+                    <ol>
+                        <li>Global Variables: easy to change commonly used color.
                         <p>$primary-color: blue;
                         </p>
-                        <p>$second-color: red;</p>
-                        <li>Mixin<button>Some reused partials</button></li>
+                        <p>$second-color: red;</p></li>
+                        <li>Mixin<button>Some reused partials</button>
                         <p class="comd">@mixin flex($direction: row, $align: center, $justify: center){
                             display: flex;
                             …}</p>
                         <p>.contaner{</p>
                         <p>@include flex(column)</p>
-                        <p>}</p>
-                        <li>Extend existed button setting:</li>
+                        <p>}</p></li>
+                        <li>Extend existed button setting:
                         <p class="comd">
                             .btn1 {
                             color: $ft-col;
@@ -86,8 +87,8 @@
                         </p>
                         <p>.but02{</p>
                         <p>@extend .btn1</p>
-                        <p>}</p>
-                        <li>Nesting fuction:</li>
+                        <p>}</p></li>
+                        <li>Nesting fuction:
                         <p>The normal used one:</p>
                         <div class="comd">
                             <p>.btn1 {</p>
@@ -105,13 +106,13 @@
                             <p>.btn1 > .ng: hover{</p>
                             <p> width: 48px}</p>
                             <p> }</p>
-                        </div>
+                        </div></li>
                     </ol>
                 </article>
-            </section>
+            </div>
         </div>
     </main>
-    <!-- ------------------Footer-------------------- -->
+    <!-- footer  -->
     <footer>
         <p> &copy;2023. WEN LU</p>
     </footer>

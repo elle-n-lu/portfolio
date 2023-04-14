@@ -45,7 +45,7 @@ main {
         @extend .this-page;
     }
     .main {
-        @include grid(1);
+        @include grid(1fr);
 
         aside {
             display: none;
@@ -76,7 +76,7 @@ main {
             }
         }
 
-        section {
+        .container {
 
             article {
                 @extend .article-base;
@@ -89,6 +89,9 @@ main {
                 h2{
                     font-weight: normal;
                     padding: 1rem;
+                }
+                img{
+                    width: 100%;
                 }
                 ol{
                     line-height: 1.6;

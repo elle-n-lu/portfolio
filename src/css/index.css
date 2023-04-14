@@ -29,7 +29,7 @@ body a {
   }
 }
 
-.article-base, main section article {
+.article-base, main .container article {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -89,7 +89,7 @@ body a {
   }
 }
 
-.article-base, main section article {
+.article-base, main .container article {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -221,7 +221,7 @@ body a {
   }
 }
 
-.article-base, main section article {
+.article-base, main .container article {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -294,7 +294,7 @@ body a {
   }
 }
 
-.article-base, main section article {
+.article-base, main .container article {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -375,28 +375,28 @@ aside a:hover {
     border-radius: 10px;
   }
 }
-.word-hover, main section article .post-title {
+.word-hover, main .container article .post-title {
   transition: 0.4s;
 }
-.word-hover:hover, main section article .post-title:hover {
+.word-hover:hover, main .container article .post-title:hover {
   color: #ff6d19;
   transform: translateY(-4px);
 }
 
 main {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   gap: 16px;
   margin-top: 1rem;
 }
-main section article .post-title {
+main .container article .post-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.5rem;
 }
-main section article label {
+main .container article label {
   display: inline-block;
   margin-bottom: 0.5rem;
   border: 1px solid #3d242c;

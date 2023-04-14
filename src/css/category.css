@@ -29,7 +29,7 @@ body a {
   }
 }
 
-.article-base, main .main section {
+.article-base, main .main .container {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -161,7 +161,7 @@ body a {
   }
 }
 
-.article-base, main .main section {
+.article-base, main .main .container {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -234,7 +234,7 @@ body a {
   }
 }
 
-.article-base, main .main section {
+.article-base, main .main .container {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -264,16 +264,27 @@ body a {
   background: #ff6d19;
 }
 
+.max {
+  width: 80%;
+  height: auto;
+  margin: 2rem auto;
+}
+
+.min {
+  width: 100px;
+  height: auto;
+}
+
 main {
   height: 80vh;
 }
-main .main section {
+main .main .container {
   text-align: left;
 }
-main .main section a {
+main .main .container a {
   margin: 0 2rem;
 }
-main .main section a:hover {
+main .main .container a:hover {
   color: #ff6d19;
   border-bottom: 1px solid #ff6d19;
 }/*# sourceMappingURL=category.css.map */

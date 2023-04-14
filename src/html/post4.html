@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../docs/paw-icon.png">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/post1.css" />
+    <link rel="stylesheet" href="../css/post1.css" >
 </head>
 
 <body>
+    <!-- header  -->
     <header>
         <nav>
             <a href="../../index.html" class="nav-avatar"></a>
@@ -23,7 +24,7 @@
             </div>
         </nav>
     </header>
-    <!-- ------------------Main-------------------- -->
+    <!-- main  -->
     <main>
         <p class="thispage"><a href="../../index.html">Home</a>/<a href="./category.html">Category </a>/
             <a href="./category.html">CSS </a>/ About learning of fun CSS
@@ -53,15 +54,17 @@
 
                 </div>
             </aside>
-            <section>
+            <div class="container">
+                <!-- post content  -->
                 <article>
                     <h2>About learning fun CSS</h2>
                     <label>2023.04.08</label>
+                    <p>
+                        <img src="../../docs/css-img.png"  alt="css">
+                    </p>
                     <ol>
-                        <p>
-                            <img src="../../docs/css-img.png" width="100%">
-                        </p>
-                        <P>Default style of html element, such as :</P>
+                        <li>
+                        Default style of html element, such as :
                         <div class="comd">
 
                             <button> Inline display : a span</button>
@@ -77,38 +80,38 @@
                         </div><br>
                         <div class="comd">
                             Website content element:
-                            <li>
+                            <p>
                                 word
-                            </li>
-                            <li>image</li>
-                            <li>dynamic element.</li>
-                        </div>
-                        <li>Positon</li>
+                            </p>
+                            <p>image</p>
+                            <p>dynamic element.</p>
+                        </div></li>
+                        <li>Positon
                         <p>
                             <button>Relative</button>: set top, left, right, bottom distance away where its origin
                             place.
                             <button>Absolute</button>: depend its previous relative box, if not then relative to the
                             root html.
-                        </p>
+                        </p></li>
                         <li>
                             Responsive:
-                        </li>
+                        
                         <P>
                             @media screen and (min-width: 800px){
                             }
                         </P>
-                        <img src="../../docs/responsive-img.png" width="100%">
-                        <p>left: Mobile || right: Desktop</p>
-                        <li>Animation!<button>Dynamic elements</button></li>
-                        <img src="../../docs/Wow-gif.webp" width="100%">
+                        <img src="../../docs/responsive-img.png" alt="res1">
+                        <p>left: Mobile || right: Desktop</p></li>
+                        <li>Animation!<button>Dynamic elements</button>
+                        <img src="../../docs/Wow-gif.webp" alt="css2">
                         <p><button>^</button>
-                            is gif, not created by css animation!</p>
+                            is gif, not created by css animation!</p></li>
                     </ol>
                 </article>
-            </section>
+            </div>
         </div>
     </main>
-    <!-- ------------------Footer-------------------- -->
+    <!-- footer  -->
     <footer>
         <p> &copy;2023. WEN LU</p>
     </footer>

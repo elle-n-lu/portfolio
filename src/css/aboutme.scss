@@ -24,7 +24,7 @@ main {
     @include grid(1fr);
 
 
-    section {
+    .container {
         .aboutme {
             background-color: $white;
             padding: 1rem;

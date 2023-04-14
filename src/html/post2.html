@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../docs/paw-icon.png">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/post1.css" />
+    <link rel="stylesheet" href="../css/post1.css">
 </head>
 
 <body>
+    <!-- header  -->
     <header>
         <nav>
             <a href="../../index.html" class="nav-avatar"></a>
@@ -23,7 +24,7 @@
             </div>
         </nav>
     </header>
-    <!-- ------------------Main-------------------- -->
+    <!-- main  -->
     <main>
         <p class="thispage"><a href="../../index.html">Home</a>/<a href="./category.html">Category </a>/
             <a href="./category.html">Git </a>/ About learning of Github Actions
@@ -53,11 +54,12 @@
 
                 </div>
             </aside>
-            <section>
+            <!-- post content  -->
+            <div class="container">
                 <article>
                     <h2>About learning usage of basic Github Actions</h2>
                     <label>2023.04.08</label>
-                    <ol>
+                    <div style="padding: 1rem 0 0 2rem;text-align: left;">
                         <h3 style="font-weight: normal;">Github Action function is a CI/CD way.</h3>
                         <h3 style="font-weight: normal;">Lets try to continually automatic deploy to
                             <button>Netlify</button>.
@@ -68,20 +70,22 @@
                         <br><strong>Deploy a React app</strong> <button>>>></button><a
                             href="https://javascript.works-hub.com/learn/how-to-create-a-ci-slash-cd-pipeline-using-netlify-and-github-actions-90aeb">Reference
                             2</a>
-                        <li>Step: </li>
+                    </div>
+                    <ol>
+                        <li>Step: 
                         <p>Prepare project and push to Github.
                             Make sure there is index.html in root directory if deploy only static webpages.</p>
-
-                        <li>Step:</li>
+                        </li>
+                        <li>Step:
                         <p>Netlify connect GitHub and deploy project, this way will let Netlify automatically
                             continually deploy your every push, so normally you don’t need an actions to CD for you. If
                             you just create a project on Netlify or drag your project into there, then you can set up a
                             hooks link, and use that hooks link and Github actions to do CD manually.</p>
                         <p>
-                            <img class="img-shadow " src="../../docs/netligfy-hooks-pos.png" width="100%">
-                            <img class="img-shadow " src="../../docs/netlify-hooks.png" width="100%">
-                        </p>
-                        <li>Step:</li>
+                            <img class="img-shadow " src="../../docs/netligfy-hooks-pos.png" alt="ac3">
+                            <img class="img-shadow " src="../../docs/netlify-hooks.png" alt="ac2">
+                        </p></li>
+                        <li>Step:
                         <p>Create yml file:</p>
                         <p>
                             In the root folder, create <button>.github/workflows</button> folder,
@@ -104,20 +108,20 @@
                             <p> - name: trigger netlify build</p>
                             <p> run: |</p>
                             <p> curl -X POST -d '{}' [ https://api.netlify.c....Your hooks likn ]</p>
-                            </p>
-                        </div>
-                        <li>Step: </li>
+                           
+                        </div></li>
+                        <li>Step: 
                         <p>
                             commit and push</p>
-                            <img class="img-shadow " src="../../docs/actions-success.png" width="100%">
-                            <li>Continueing....</li>
+                        <img class="img-shadow " src="../../docs/actions-success.png" alt="ac1"></li>
+                        <li>Continueing....</li>
 
                     </ol>
                 </article>
-            </section>
+            </div>
         </div>
     </main>
-    <!-- ------------------Footer-------------------- -->
+    <!-- footer  -->
     <footer>
         <p> &copy;2023. WEN LU</p>
     </footer>

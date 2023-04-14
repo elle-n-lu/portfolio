@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../../docs/paw-icon.png">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/aboutme.css" />
+    <link rel="stylesheet" href="../css/aboutme.css" >
 
 </head>
 
 <body>
+    <!-- header  -->
     <header>
         <nav>
             <a href="../../index.html" class="nav-avatar"></a>
@@ -23,8 +24,9 @@
             </div>
         </nav>
     </header>
-    <!-- ------------------Main-------------------- -->
+    <!-- main part -->
     <main>
+        <!-- side navigation of aboutme features  -->
         <aside>
             <label><a href="#aboutme">About me</a> </label>
             <label><a href="#skills">Skills</a> </label>
@@ -32,16 +34,18 @@
             <label><a href="#work">Work Experience</a></label>
             <label><a href="#education">Education</a></label>
         </aside>
-
-        <section>
-            <div class="aboutme" id="aboutme">
+        <!-- container of 'aboutme' features  -->
+        <div class="container">
+            <!-- aboutme feature  -->
+            <div class="aboutme" >
                 <div class="top">
                     ABOUT ME
                 </div>
                 <p>Studying in CA BootCamp; </p><br>
                 <p>Aspiring Front End / BackEnd developer;</p>
             </div>
-            <article class="skills" id="skills">
+            <!-- skills feature -->
+            <article class="skills">
                 <h2>Skills</h2>
                 <div>
                     <button>HTML</button>
@@ -52,7 +56,8 @@
                     <button>PostgreSQL</button>
                 </div>
             </article>
-            <article class="interests" id="interests">
+            <!-- interests  -->
+            <article class="interests" >
                 <h2>Interests</h2>
                 <div class="interests-box">
                     <div class="interests-img1">
@@ -67,7 +72,8 @@
 
                 </div>
             </article>
-            <article class="Work" id="work">
+            <!-- work experience  -->
+            <article class="Work" >
                 <h2>Work Experience</h2>
                 <div>
                     <p>2021.09 --2023.03 &nbsp;&nbsp;&nbsp; Night Fill&nbsp;&nbsp;&nbsp;&nbsp;Woolworths Katherine</p>
@@ -78,7 +84,8 @@
                         CHINA</p>
                 </div>
             </article>
-            <article class="education" id="education">
+            <!-- education infor -->
+            <article class="education">
                 <h2>Education</h2>
                 <div>
                     <p>2023.03 --Now &nbsp;&nbsp;&nbsp;&nbsp; Coder Academy Bootcamp</p><br>
@@ -87,8 +94,9 @@
                 </div>
             </article>
 
-        </section>
+        </div>
     </main>
+    <!-- contact me information  -->
     <div class="form">
         <p> <span class="icon mail-icon"></span>Email:<a href="mailto:14458@coderacademy.edu.au " > 14458@coderacademy.edu.au</a> </p>
         <p><span class="icon phone-icon"></span> Phone: 0458591406</p>
@@ -97,16 +105,18 @@
         </p>
 
     </div>
-    <!-- ------------------Footer-------------------- -->
+    <!-- footer part -->
     <footer>
         <p> &copy;2023. WEN LU</p>
     </footer>
+    <!-- script to open new window to show and download resume  -->
+    <script>
+        var sac = document.getElementById('pdf')
+        sac.onclick=function(){
+         window.open('https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Ellen+Lu-Front+End+Developer.pdf')
+        }
+ 
+ </script>
 </body>
-<script type="text/javascript">
-       var sac = document.getElementById('pdf')
-       sac.onclick=function(){
-        window.open('https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Ellen+Lu-Front+End+Developer.pdf')
-       }
 
-</script>
 </html>

@@ -14,10 +14,10 @@
 main {
     @extend .main-base;
     
-    @include grid(1);
+    @include grid(1fr);
     margin-top: 1rem;
 
-    section {
+    .container {
         article {
             @extend .article-base;
 
