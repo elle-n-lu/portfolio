@@ -22,5 +22,5 @@ photos in life
 ![screenshot_1](https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Screenshot+1.png)
 ![screenshot_2](https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Screenshot+2.png)
 ![screenshot_3](https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Screenshot+3.png)
-![screenshot_9](https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Screenshot+4.png)
+
 
