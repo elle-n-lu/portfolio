@@ -391,7 +391,7 @@ aside a:hover {
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: _;
   gap: 16px;
 }
 main .container .aboutme {
@@ -536,28 +536,28 @@ main .container article.education button:hover {
   }
 }
 @media screen and (min-width: 1100px) {
-  main section article.interests .interests-box {
+  main .container article.interests .interests-box {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
-  main section article.interests .interests-box .interests-img1 {
+  main .container article.interests .interests-box .interests-img1 {
     width: 33%;
   }
-  main section article.interests .interests-box .interests-img1:hover {
+  main .container article.interests .interests-box .interests-img1:hover {
     width: 100%;
   }
-  main section article.interests .interests-box .interests-img2 {
+  main .container article.interests .interests-box .interests-img2 {
     width: 20%;
   }
-  main section article.interests .interests-box .interests-img2:hover {
+  main .container article.interests .interests-box .interests-img2:hover {
     width: 100%;
   }
-  main section article.interests .interests-box .interests-img3 {
+  main .container article.interests .interests-box .interests-img3 {
     width: 33%;
   }
-  main section article.interests .interests-box .interests-img3:hover {
+  main .container article.interests .interests-box .interests-img3:hover {
     width: 100%;
   }
 }/*# sourceMappingURL=aboutme.css.map */

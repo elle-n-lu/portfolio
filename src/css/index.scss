@@ -13,8 +13,7 @@
 
 main {
     @extend .main-base;
-    
-    @include grid(1fr);
+    @include grid(_);
     margin-top: 1rem;
 
     .container {

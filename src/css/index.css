@@ -385,7 +385,7 @@ aside a:hover {
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: _;
   gap: 16px;
   margin-top: 1rem;
 }

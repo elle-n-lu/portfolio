@@ -393,10 +393,10 @@ main .main .container article ol p {
   main .main aside .titles-list .cate-posts a {
     text-align: left;
   }
-  main .main section article {
+  main .main .container article {
     margin-top: 0;
   }
-  main .main section article h2 {
+  main .main .container article h2 {
     font-size: 1.8rem;
   }
 }

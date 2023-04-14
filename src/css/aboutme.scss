@@ -21,7 +21,7 @@
 
 main {
     @extend .main-base;
-    @include grid(1fr);
+    @include grid(_);
 
 
     .container {
@@ -202,7 +202,7 @@ main {
 
 @media screen and (min-width:1100px) {
     main {
-        section {
+        .container {
             article {
                 &.interests {
                     .interests-box {
