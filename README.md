@@ -5,7 +5,10 @@
 
 
 [Demo](https://meek-stardust-f1f3d2.netlify.app/)
+
 [Git_Repo](https://github.com/elle-n-lu/portfolio)
+
+[Presentation_link](https://youtu.be/A4D8OvuLWPE)
 
 This website is to serve as an online resume as a programmer, and also to record some knowledge points in the process of learning programming, as well as the daily landscape photos taken by myself.
 
@@ -19,8 +22,8 @@ photos in life
 <img src="./docs/sitemap.png" alt="isolated" width="200"/>
 
 ### § Screenshots
-![screenshot_p](https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Screenshot+5.png)
-![screenshot_1](https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Screenshot+1.png)
-![screenshot_2](https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Screenshot+2.png)
-![screenshot_3](https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Screenshot+3.png)
+<img src="https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Screenshot+5.png" alt="isolated" width="250"/>
+<img src="https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Screenshot+1.png" alt="isolated" width="250"/>
+<img src="https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Screenshot+2.png" alt="isolated" width="250"/>
+<img src="https://cv-pdf-4d.s3.ap-southeast-2.amazonaws.com/Screenshot+3.png" alt="isolated" width="250"/>
 
