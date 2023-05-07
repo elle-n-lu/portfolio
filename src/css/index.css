@@ -136,7 +136,7 @@ header nav .nav-avatar {
   height: 24vw;
   border-radius: 50%;
   box-sizing: border-box;
-  background: url("../../docs/avatar.png") no-repeat;
+  background-color: rgb(42, 82, 150);
   background-size: cover;
 }
 header nav .nav-avatar:hover {
