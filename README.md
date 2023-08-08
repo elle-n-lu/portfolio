@@ -4,7 +4,7 @@
 ![netlify](https://img.shields.io/badge/netlify-%2320232a.svg?style=for-the-badge&logo=netlify&logoColor=green)
 
 
-[Demo](https://meek-stardust-f1f3d2.netlify.app/)
+[Demo](https://meet-ellen.netlify.app/)
 
 [Git_Repo](https://github.com/elle-n-lu/portfolio)
 
